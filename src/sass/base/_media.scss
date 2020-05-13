@@ -1,0 +1,153 @@
+@media (max-width: 991px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        flex-wrap: wrap;
+
+        &__contacts {
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__phone {
+            margin-right: 15px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+
+        &__header {
+            font-size: 38px;
+        }
+
+        &__subheader {
+            font-size: 21px;
+        }
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .advantages {
+        padding: 55px 0 55px 0;
+
+        &__wrapper {
+            margin-top: 55px;
+        }
+
+        &__title {
+            font-size: 15px;
+        }
+
+        &__descr {
+            margin-top: 15px;
+            font-size: 12px;
+        }    
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header {
+        &__logo {
+            width: 140px;
+        }
+        &__official {
+            font-size: 10px;
+            span {
+                font-size: 12px;
+            }
+        }
+
+        &__contacts {
+            margin-top: 25px;
+            flex-direction: column;
+        }
+
+        &__phone {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    .promo {
+        padding: 15px 0 40px 0;
+        &__wrapper {
+            margin-top: 40px;
+        }
+
+        &__header {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        &__subheader {
+            margin-top: 10px;
+            font-size: 19px;
+            text-align: center;
+        }
+
+        &__icons {
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        &__icon {
+            font-size: 12px;
+            img {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .button {
+        &_main {
+            margin-top: 50px;
+        }
+    }
+
+    .title {
+        font-size: 19px;
+    }
+
+    .advantages {
+
+        &__title {
+            margin-top: 10px;
+        }
+
+        &__wrapper {
+            margin-top: 30px;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__item {
+            margin-top: 25px;
+        }
+
+        &__descr {
+            margin-top: 10px;
+        }
+       
+    }
+}
