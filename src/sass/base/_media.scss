@@ -1,9 +1,24 @@
+@media (max-width: 1200px) {
+    .carousel {
+        padding: 50px 0 30px 0;
+
+        &__inner {
+            width: 100%;
+        }
+
+        &-nav {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     .container {
         padding: 0 20px;
     }
 
     .promo {
+        min-height: 650px;
         &__wrapper {
             align-items: center;
         }
@@ -22,17 +37,12 @@
     }
 
     // Carousel
-    .carousel {
-        padding: 50px 0 20px 0;
+  
 
-        .tns-item {
-            img {
-                width: 100%;
-            }
-        }
+    .catalog {
 
-        .prev, .next {
-            display: none;
+        &__content {
+            justify-content: center;
         }
     }
     
@@ -97,6 +107,48 @@
             text-align: center;
         }
     }
+
+    .catalog {
+
+        &__tabs {
+            
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &__tab {
+            margin: 0;
+        }
+    }
+
+    .reviews {
+
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        &__descr {
+            width: 100%;
+        }
+
+        &__photo {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        &__author, &__goal {
+            text-align: center;
+        }
+
+        &__text {
+            padding: 0 15px;
+            text-align: justify;
+        }
+
+    }
+    
 }
 
 @media (max-width: 576px) {
@@ -126,11 +178,10 @@
         }
     }
 
-    .promo {
-        
+    .promo {    
         padding: 15px 0 50px 0;
         &__wrapper {
-            margin-top: 70px;
+            margin-top: 90px;
         }
 
         &__header {
@@ -145,7 +196,7 @@
         }
 
         &__icons {
-            margin-top: 50px;
+            margin-top: 70px;
             width: 100%;
         }
 
@@ -200,6 +251,63 @@
         &__descr {
             margin-top: 55px;
             font-size: 15px;
+        }
+    }
+
+    .catalog {
+        padding-bottom: 50px;
+        &__content {
+            margin-top: 45px;
+        }
+
+        &__tabs {
+            margin-top: 50px;
+        }
+
+        &__tab {
+            font-size: 9px;
+            margin-bottom: 10px;
+        }
+
+        &-item {
+
+            &__old-price {
+                font-size: 13px;
+            }
+
+            &__price {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .reviews {
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .footer {
+
+        &__info {
+            height: 250px;
+            padding: 35px 19px 30px 19px;
+            left: 0;
+            width: 100%;
+            transform: translateX(0);
+        }
+
+        &__addr {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .promo {
+
+        &__wrapper {
+            margin-top: 70px;
         }
     }
 }

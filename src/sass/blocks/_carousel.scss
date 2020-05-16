@@ -2,12 +2,13 @@
     padding: 81px 0;
 
     &__inner {
+
         position: relative;
         width: 750px;
         margin: 0 auto;
     }
 
-    .prev, .next {
+    .owl-prev, .owl-next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -26,19 +27,12 @@
         }
     }
 
-    .next {
+    .owl-next {
         left: auto;
         right: -66px;
     }
 
-    .tns-item {
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    }
-
-    .tns-nav {
+    &-dots {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,7 +40,7 @@
 
         button {
             display: block;
-            margin-right: 5px;
+            margin-right: 10px;
 
             width: 4px;
             height: 12px;
@@ -58,13 +52,19 @@
 
             transition: opacity .1s linear;
             
+            &:last-child {
+                margin-right: 0;
+            }
+
             &:focus {
                 outline: none;
             }
-        }
-        .tns-nav-active {
+            &.active {
             opacity: 0.8;
+            }
         }
     }
+
+    
 
 }
