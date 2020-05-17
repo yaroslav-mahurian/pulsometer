@@ -10,4 +10,16 @@
         font-size: 20px;
         font-weight: 500;
     }
+
+    .error {
+        box-shadow: 0 0 0 1px red;
+    }
+
+    label.error {
+        color: #fff;
+        box-shadow: none;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
 }

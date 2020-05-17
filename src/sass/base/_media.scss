@@ -301,13 +301,28 @@
             font-size: 17px;
         }
     }
-}
 
-@media (max-width: 320px) {
-    .promo {
+    .modal {
+        padding: 30px 20px;
+        width: 90%;
 
-        &__wrapper {
-            margin-top: 70px;
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__descr {
+            font-size: 13px;
+        }
+
+        .feed-form {
+            width: 100%;
+        }
+
+        &__close {
+            top: -30px;
+            right: 0;
         }
     }
+
+   
 }
