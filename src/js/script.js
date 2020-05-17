@@ -109,7 +109,7 @@ $(document).ready(function(){
 				phone: "Пожалуйста, введите корректный номер телефона.",
 				email: {
 					required: "Пожалуйста, введите свой email.",
-					email: "Неправильно введен адрес почты."
+					email: "Некорректный адрес почты."
 				}
 			}
 		});
@@ -122,6 +122,39 @@ $(document).ready(function(){
 
 	/* Masked Input */
 	$('input[name=phone]').mask("+38 (099) 999-99-99");
+
+	/* Mail */
+	$('form').submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#consultation, #order').fadeOut('fast');
+			$('.overlay, #thanks').fadeIn('fast');
+
+			$('form').trigger('reset');	
+		});
+		return false;
+	});
+
+	/* Smooth scroll and pageup */
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn('fast');
+		} else {
+			$('.pageup').fadeOut('fast');
+		}
+	});
+
+	$("a[href^='#']").click(function(){
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
+});
+
 });
 
 
